@@ -1,6 +1,8 @@
 .App {
-  text-align: center;
+  font-family: 'Roboto';
+  background-color: #EDF5E1;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -13,7 +15,21 @@
   }
 }
 
-.App-header {
+a{
+  color: #333;
+  text-decoration: none;
+}
+.nav-link{
+  color: #EDF5E1
+}
+
+.bg-primary{
+  background-color: #EDF5E1
+}
+
+
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,11 +38,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +48,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar-brand{
+  font-family: 'Roboto'
 }

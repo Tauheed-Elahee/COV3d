@@ -1,12 +1,16 @@
 .App {
-  font-family: 'Roboto';
-  background-color: #EDF5E1;
+  font-family: 'Roboto', sans-serif
 }
 
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.container{
+  background-image: url(./Images/covid.jpg);
+  object-fit:cover;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -51,5 +55,7 @@ a{
 }
 
 .navbar-brand{
-  font-family: 'Roboto'
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
 }

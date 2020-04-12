@@ -39,24 +39,47 @@ class Header extends Component {
       //   </div>
       // </nav>
 
+      // <nav>
+      //   <div className="d-flex justify-content-between">
+
+      //       <div className="d-flex justify-content-start">
+      //         <Link className="nav-link" style={linkStyle}>
+      //           MISSION
+      //         </Link>
+
+      //         <Link className="nav-link" style={linkStyle}>
+      //           WHAT WE DO
+      //         </Link>
+
+      //         <Link className="nav-link" style={linkStyle}>
+      //           GET INVOLVED
+      //         </Link>
+      //       </div>
+      //     <Brand/>
+      //     <Link className="nav-link" style ={linkStyle}>
+      //       CONTACT US
+      //     </Link>
+      //   </div>
+      // </nav>
       <nav>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between" style={{zIndex:0}}>
 
             <div className="d-flex justify-content-start">
-              <Link className="nav-link" style={linkStyle}>
+              <Link className="nav-link" to="/" style={linkStyle}>
                 MISSION
               </Link>
 
-              <Link className="nav-link" style={linkStyle}>
+              <Link className="nav-link" to="/WhatWeDo"style={linkStyle}>
                 WHAT WE DO
               </Link>
 
-              <Link className="nav-link" style={linkStyle}>
+              <Link className="nav-link" to="/GetInvolved"style={linkStyle}>
                 GET INVOLVED
               </Link>
             </div>
-          <Brand/>
-          <Link className="nav-link" style ={linkStyle}>
+            <Brand/>
+
+          <Link className="nav-link" to="/ContactUs" style ={linkStyle}>
             CONTACT US
           </Link>
         </div>
@@ -66,7 +89,8 @@ class Header extends Component {
 }
 
 const linkStyle = {
-  color: "#fff",
+  color: "#000",
+  height: "100px"
 };
 
 export default Header;

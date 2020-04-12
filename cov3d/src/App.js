@@ -2,8 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
-import MainCard1 from "./Components/InfoCards/MainCard1";
-import logo from "./Images/logo.png";
+import Footer from "./Components/FooterComp";
+import Footer2 from "./Components/FooterComp2"
+import MissionStatement from "./Components/InfoCards/MissionPage";
+import WhatWeDoPage from "./Components/WhatWeDoPage";
+import ContactUs from "./Components/ContactUsPage";
+
 
 function App() {
   return (
@@ -15,7 +19,31 @@ function App() {
         >
         </link>
         <Header />
-        <MainCard1/>
+        <Route exact path="/" render={props=>(
+          <React.Fragment>
+            <MissionStatement/>
+            <Footer />
+          </React.Fragment>
+        )}/>
+        <Route exact path="/WhatWeDo" render={props=>(
+          <React.Fragment>
+            <WhatWeDoPage/>
+            <Footer2 />
+          </React.Fragment>
+        )}/>
+        <Route exact path="/GetInvolved" render={props=>(
+          <React.Fragment>
+            <Footer/>
+          </React.Fragment>
+        )}/>
+
+        <Route exact path="/ContactUs" render={props=>(
+          <React.Fragment>
+            <ContactUs />
+            <Footer2/>
+          </React.Fragment>
+        )}/>
+        
       </div>
     </Router>
   );

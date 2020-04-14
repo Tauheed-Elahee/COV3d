@@ -62,9 +62,9 @@ class Header extends Component {
       //   </div>
       // </nav>
       <nav>
-        <div className="d-flex justify-content-between" style={{zIndex:0}}>
+        <div className="d-flex justify-content-between align-items-center" style={{zIndex:0, height: '75px'}}>
 
-            <div className="d-flex justify-content-start">
+            <div className="d-flex justify-content-start align-items-center">
               <Link className="nav-link" to="/" style={linkStyle}>
                 MISSION
               </Link>
@@ -79,7 +79,7 @@ class Header extends Component {
             </div>
             <Brand/>
 
-          <Link className="nav-link" to="/ContactUs" style ={linkStyle}>
+          <Link className="nav-link"  to="/ContactUs" style ={linkStyle}>
             CONTACT US
           </Link>
         </div>
@@ -90,7 +90,7 @@ class Header extends Component {
 
 const linkStyle = {
   color: "#000",
-  height: "100px"
+  verticalAlign:'bottom'
 };
 
 export default Header;

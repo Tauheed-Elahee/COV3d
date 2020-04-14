@@ -12,7 +12,12 @@ class MissionPage extends Component {
           transform: 'translate(-50%, -50%)'
         }}
       >
-        Harnessing Ottawa’s 3D printing community to make PPE for frontline workers fighting COVID.
+        <div>
+          Harnessing Ottawa’s 3D printing community to make PPE for frontline workers fighting COVID
+        </div>
+        <div className="d-flex justify-content-end">
+        <button type="button" className="btn btn-dark"> Learn more >></button>
+        </div>
       </div>
     );
   }

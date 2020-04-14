@@ -10,10 +10,10 @@ class WhatWeDoPage extends Component {
                 <div className="card row"style={{backgroundColor:"#F0F0F0", marginTop: "15px", height: "500px", paddingTop: "250px"}}>
                     <TaskBreakdown />     
                 </div>         
-                <div className="card row"style={{backgroundColor:"#F0F0F0", marginTop: "15px", height: "500px", paddingTop: "250px"}}>
+                <div className="shadow p-3 mb-5 bg-white rounded"style={{backgroundColor:"#F0F0F0", marginTop: "15px", height: "500px", paddingTop: "250px"}}>
                     print option 1    
                 </div>
-                <div className="card row"style={{backgroundColor:"#F0F0F0", marginTop: "15px", height: "500px", paddingTop: "250px"}}>
+                <div className="shadow p-3 mb-5 bg-white rounded"style={{backgroundColor:"#F0F0F0", marginTop: "15px", height: "500px", paddingTop: "250px"}}>
                     print option 2
                 </div> 
 

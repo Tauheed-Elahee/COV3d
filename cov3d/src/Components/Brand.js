@@ -15,8 +15,8 @@ const brand={
     display: 'block',
     marginLeft: 'auto',
     marginRight: 'auto',
-    heigh: '100px',
-    width: '450px',
+    heigh: '75px',
+    width: '337px',
     top: "0",
     zIndex: '1'
 }

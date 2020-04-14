@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ImgCluster from "./LargeImgCluster";
+import ImgCluster from "./SmallImageCluster";
 import Copyright from "./copyrightInfo";
 
 class FooterComp extends Component {
